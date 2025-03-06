@@ -1,3 +1,4 @@
+import 'package:app01/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
@@ -7,19 +8,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp( 
+    return const MaterialApp( 
       debugShowCheckedModeBanner: false,
       title: 'Material App',
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('feed Card'),
-          backgroundColor: const Color.fromARGB(255, 233, 4, 80),
-        ),
-        body: const Center(
-          child: Text('hola mundo'),
-        ),
-        backgroundColor: Colors.grey[300],
-      ),
+      home: HomeScreen(),
     );
   }
 }
